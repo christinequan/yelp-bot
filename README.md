@@ -29,6 +29,14 @@ please create a config.py file including the following:
 
   secret_token = "YOUR SECRET TOKEN"
 
+## The Process
+I first started with just returning the restaurant names that have deals for a specifiied region. However, I decided to add more context around deals with information from the Yelp Search API (restaurant category, star rating, and some exceptions about using the deal).
+
 ## Conclusions
 
 The deals section for the few cities I tested (San Francisco or Palo Alto) seem a little lackluster. It is mostly just vouchers. I saw that there was also a cashback program where you get 10% cashback if you use a registered credit card.
+
+## Future Work
+It would be interesting to include a recommendation for what the top dish is. However, the Yelp API only returns a limited number of reviews so it might be difficult to determine what the most popular dishes are.
+
+The Yelp Fusion API (the successor to the Yelp 2.0 API) seems to offer more functionality. However, I am yet to read the documentation and exlore that API.
