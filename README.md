@@ -1,7 +1,7 @@
 # Yelp Deals Bot (CLI)
 
 ## The Inspiration
-Yelp is one of my most used app.
+Yelp is one of my favorite apps.
 Whenever I need advice on where to eat or what to order, I consult yelp.
 As a college student,  I am also interested in not paying a lot for food,
 which can be difficult in Palo Alto.
