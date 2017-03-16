@@ -29,17 +29,11 @@ def search_params(location):
 
 def queryAPI(params):
 
-    KEY = config.key
-    SECRET = config.secret
-
-    TOKEN = config.token
-    TOKEN_SECRET = config.secret_token
-
     session = rauth.OAuth1Session(
-        consumer_key = KEY,
-        consumer_secret = SECRET,
-        access_token = TOKEN,
-        access_token_secret = TOKEN_SECRET
+        consumer_key = config.key,
+        consumer_secret = config.secret,
+        access_token = config.token,
+        access_token_secret = config.secret_token
     )
 
     request = session.get(API_BASE, params = params)
@@ -56,7 +50,8 @@ def write_headline(location, data):
     template_base.format(location = location, x = len(businesses))
 
     deal_list = list()
-    template_deal = """{restaurant} is a {star} star {category} restaurant.
+    template_deal = """
+    {restaurant} is a {star} star {category} restaurant.
     They are offering a {title} deal!
     {deal_description}.
     """
